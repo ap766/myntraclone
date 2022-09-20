@@ -1,0 +1,30 @@
+
+.flex{
+    display: flex;
+}
+.items-center{
+align-items: center;
+}
+/*Mostly this does no work ig the justify content*/
+.justify-center{
+justify-content: center;
+}
+.space-around{
+    justify-content: space-between;
+}
+.upper-case{
+    text-transform:uppercase;
+}
+.semi-bold{
+    font-weight: bolder;
+}
+.mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+footer{
+    
+    padding:23px;
+    text-align:center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

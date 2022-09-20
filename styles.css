@@ -1,0 +1,177 @@
+/*STRUCTURE*/
+/* so we have img and ul as a part of a div inside nav(1st div inside nav) and umm there's another div inside nav too and umm nav is inside header*/
+
+/*"STEPS"*/
+/*So first put header nav and div and list and all
+
+then flex
+
+THEN the header width and margin
+LIST items padding
+
+then item center and all(once for 1st div(ul and img inside) second for the unordered list(li items)
+
+we put justify center too dont know how much that helped
+
+Then focus on text
+
+After that the search box input text that is
+
+for seaerch box we put a align center in nav bar so thats 2 dics(on same heirachy they are presnt now cus search box aere on the same level*/
+
+/*we do space between for the search box*/
+
+/*profile wislist bag  and yes giving them margin*/
+
+/*now we put items centre for the entire 2nd div here size is same so double not required that is one for menu items and then with search box no*/
+
+/*header shadowww mostly copy it*/
+/*the container/head instead of max width we put paddinggg and margin is still there
+
+/*now making navbar sticky basically those 3 lines of code*/
+/*font roboto*/
+/*put some padding top of nav and changing the font size and (height 66px-header) */
+/*remove margin from container*/
+/*margin 0 padding 0*/
+/*now modif search bar*/
+
+/*image stuff next*/
+/*2nd image within the section of 1st pimage so its same size*/
+/*made the text images actual text*/
+/*after that we use different cards and using flex*/
+
+
+/*DOUBT WHEN DO YOU GIVE PADDING AND WHEN MARGIN*/
+
+
+/*SOME STUFF*/
+/*flex used here for image and ul */
+/*flex used for the 2 divs inside nav bar*/
+/*flex used for the list items*/
+
+
+/*img thing then we pushh full otherwise if its white doesnt matterr*/
+
+/*header{
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}this is if you wanna give shadow but like myntra site has no shadow*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family:'Roboto',sans-serif;
+}
+header{
+    position: sticky;
+    top:0;
+    background:white;
+    height:66px;
+}
+.left img{
+    width:32px;
+    height:32px;
+}
+.container{/*the whole header thing is a container*/
+    /*max-width: 80vw;
+        
+        margin: auto;we couldnt use this cus it doesnt cover the entire body */
+    padding:0 10vw;
+    
+}
+.containerHeader{
+    padding:0 10vw;
+}
+nav{
+    font-size:12px;
+    padding-top: 14px;
+}
+.rightBox {
+    display: flex;
+    margin: 12px;
+}
+
+
+
+
+.search
+{
+    width:34vw;
+    padding:7px 17px;
+    border:0.5px solid grey;
+    border-radius:5px;
+}
+.homeImg{
+    width:80vw;
+    margin:12px 0px;
+}
+nav ul li{
+    list-style: none;/*bullets no*/
+    padding:0 12px;
+}
+.section1{
+    background: rgb(246, 238, 238);
+}
+.deal1{
+    font-size:12px;
+    font-weight:bold;
+    /*width:100%; the width should be not 100 percent because padding will increase the width*/
+    background-color: rgb(244, 252, 252);
+    padding:25px 12px;
+    font-family: 'Roboto', sans-serif;
+    
+    letter-spacing:1.7px;
+}
+.itemimg
+{
+  width:10vw;
+  margin:6px 0.5px;
+}
+/*.flex-wrap
+
+{
+flex-wrap: wrap;
+}*//*have to confirm it use */
+.tall{
+    min-height: 20vh;
+}
+
+@media(max-width:450px) {
+    .search{
+        width:72vw;
+    }
+}
+@media(max-width:650px)
+{
+    nav ul li {
+        list-style: none;
+        padding: 0 4px;
+        font-size: 10px;
+    }
+
+    .containererHeader{
+        padding: 0 2vw;
+    }
+
+    header {
+        
+        height: 122px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        flex-direction: column;
+
+    }
+
+    .rightBox {
+        display: flex;
+        margin: 12px;
+    }
+}
